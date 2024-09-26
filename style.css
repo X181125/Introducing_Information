@@ -1,0 +1,116 @@
+header {
+    background: linear-gradient(to bottom, #111, #f4f4f4); /* Gradient nền header */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Căn lề trái và phải */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 130px; /* Đặt kích thước cho hình ảnh */
+    height: 150px; /* Đặt kích thước cho hình ảnh */
+    border-radius: 50%; /* Bo tròn hình ảnh để tạo hiệu ứng hình tròn */
+    object-fit: cover; /* Giữ nguyên tỷ lệ hình ảnh */
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển tiếp mượt mà */
+    margin-top: -20px; /* Đẩy hình ảnh lên phía trên một chút */
+}
+
+.profile-pic:hover {
+    transform: scale(1.1); /* Phóng to hình ảnh khi di chuột qua */
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px; /* Bo tròn các góc của khối chứa button */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu button {
+    background-color: #333; /* Màu nền mặc định */
+    color: #fff; /* Màu chữ */
+    border: none; /* Không có viền */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    margin: 0 10px; /* Khoảng cách giữa các nút */
+    cursor: pointer; /* Con trỏ khi di chuột qua nút */
+    border-radius: 20px; /* Bo tròn nút button */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Hiệu ứng chuyển tiếp cho màu nền và phóng to */
+}
+
+/* Hiệu ứng hover */
+.menu button:hover {
+    background-color: #555; /* Màu nền khi di chuột qua */
+}
+
+/* Hiệu ứng khi nhấn vào nút */
+.menu button:active {
+    background-color: #777; /* Màu khi nhấn giữ */
+    transform: scale(0.9); /* Hiệu ứng thu nhỏ khi nhấn */
+}
+
+/* Hiệu ứng khi nút đang được chọn */
+.menu button.selected {
+    background-color: #44596a; /* Màu sau khi nút được nhấn */
+}
+
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px; /* Bo tròn các góc của khối hiển thị nội dung */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Ẩn khối content khi không có phần nào được chọn */
+}
+
+.section {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.active {
+    display: block;
+}
+
+.Social-Media {
+    position: fixed; /* Định vị cố định phần logo ở cuối trang */
+    bottom: 0; /* Đặt ở sát đáy trang */
+    width: 100%; /* Để phần Social-Media chiếm toàn bộ chiều rộng trang */
+    text-align: center; /* Căn giữa các logo */
+    background-color: #f4f4f4; /* Màu nền nhạt cho phần cuối */
+    padding: 10px; /* Tạo khoảng cách trên và dưới logo */
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng cho phần dưới */
+}
+
+.Social-Media img {
+    width: 30px; /* Kích thước của logo */
+    height: auto; /* Tự động điều chỉnh chiều cao theo tỷ lệ */
+    margin: 0 15px; /* Tạo khoảng cách giữa các logo */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Hiệu ứng chuyển động mượt mà */
+}
+
+.Social-Media img:hover {
+    transform: scale(1.1); /* Phóng to logo khi di chuột qua */
+    opacity: 0.8; /* Giảm độ mờ logo khi di chuột qua */
+}
